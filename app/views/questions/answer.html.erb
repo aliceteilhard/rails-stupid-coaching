@@ -1,0 +1,15 @@
+<%# this needs to display the question you ask the coach as well
+as the answer
+@question = @question.select do |question|
+      question == @question%>
+
+<h1>Stupid Coaching</h1>
+
+
+
+<%= @question %>
+<%= @answer %>
+
+<%= link_to("Ask a new question", ask_path) %>
+
+<%# add a link to /ask here using the link_to rails helper%>
